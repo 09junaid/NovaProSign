@@ -100,17 +100,17 @@ export default function UserForm() {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-4xl mx-auto rounded-xl shadow-md overflow-hidden p-6 sm:p-8 transition-all duration-300"
-        style={{ backgroundColor: "#ffffff" }}
+        style={{ backgroundColor: "#F3F4F6" }}
       >
         <h2
           className="text-2xl sm:text-3xl font-bold mb-6 text-center"
-          style={{ color: "#1f2937" }}
+          style={{ color: "#0072FF" }}
         >
           Customer Order Form
         </h2>
 
         <div className="mb-8">
-          <label className="block text-sm font-medium mb-2" style={{ color: "#374151" }}>
+          <label className="block text-sm font-bold mb-2" style={{ color: "#0072FF" }}>
             Name
           </label>
           <input
@@ -136,7 +136,7 @@ export default function UserForm() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
           {fields.map((field) => (
             <div key={field.name} className="space-y-1">
-              <label className="block text-sm font-medium" style={{ color: "#374151" }}>
+              <label className="block text-sm font-bold" style={{ color: "#0072FF" }}>
                 {field.label}
               </label>
               <select
@@ -166,14 +166,14 @@ export default function UserForm() {
         </div>
 
         <div className="mb-8">
-          <label className="block text-sm font-medium mb-2" style={{ color: "#374151" }}>
+          <label className="block text-sm font-bold mb-2" style={{ color: "#0072FF" }}>
             Upload Images
           </label>
           <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-dashed rounded-md">
             <div className="space-y-1 text-center">
               <svg
                 className="mx-auto h-12 w-12"
-                style={{ color: errors.images ? "#f87171" : "#9ca3af" }}
+                style={{ color: errors.images ? "#f87171" : "#0072FF" }}
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 48 48"
@@ -189,7 +189,7 @@ export default function UserForm() {
               <div className="flex text-sm">
                 <label
                   htmlFor="file-upload"
-                  className="relative cursor-pointer bg-white rounded-md font-medium hover:text-blue-500"
+                  className="relative cursor-pointer bg-white rounded-md font-bold hover:text-blue-500"
                   style={{ color: "#2563eb" }}
                 >
                   <span>Upload files</span>
@@ -206,9 +206,9 @@ export default function UserForm() {
                     className="sr-only"
                   />
                 </label>
-                <p className="pl-1" style={{ color: "#4b5563" }}>or drag and drop</p>
+                <p className="pl-1" style={{ color: "#0072FF" }}>or drag and drop</p>
               </div>
-              <p className="text-xs" style={{ color: "#6b7280" }}>
+              <p className="text-xs" style={{ color: "#0072FF" }}>
                 PNG, JPG, GIF up to 10MB
               </p>
             </div>
@@ -221,7 +221,7 @@ export default function UserForm() {
         </div>
 
         {discountedPrice !== null && (
-          <div className="mb-6 text-right text-sm font-semibold" style={{ color: "#374151" }}>
+          <div className="mb-6 text-right text-sm font-semibold" style={{ color: "#0072FF" }}>
             Discounted Price: ${discountedPrice.toFixed(2)}
           </div>
         )}
@@ -230,7 +230,7 @@ export default function UserForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white ${
+            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-bold rounded-md shadow-sm text-white ${
               isSubmitting
                 ? "cursor-not-allowed"
                 : "hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
