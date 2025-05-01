@@ -160,7 +160,7 @@ export default function UserPreview() {
               <div className=" flex">
               <p
                 onClick={downloadAsPDF}
-                className=" transition px-6 py-2 cursor-pointer rounded-lg shadow-md"
+                className=" transition px-6 py-2 rounded-lg shadow-md"
                 style={{ backgroundColor: '#0072FF', color: 'white' }}
               >
                 Download as PDF
@@ -180,7 +180,7 @@ export default function UserPreview() {
               >
                 Your Package Includes
               </span>
-              <div className="mt-8 grid grid-cols-2 md:grid-cols-2 gap-4">
+              <div className="mt-4 grid grid-cols-2 md:grid-cols-2 gap-4">
                 {formData.images.map((img, idx) => (
                   <img
                     key={idx}
