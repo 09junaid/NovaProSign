@@ -64,7 +64,7 @@ export default function UserPreview() {
   const discountedPrice = formData.basePrice * (1 - formData.discount / 100);
 
   return (
-    <div ref={previewRef} className=" " style={{ backgroundColor: '#F3F4F6' }}>
+    <div ref={previewRef} className=" " style={{ backgroundColor: '#E9F5FF' }}>
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-3">
         {/* Left Static Section */}
         <div className="col-span-2">
@@ -72,7 +72,7 @@ export default function UserPreview() {
         </div>
 
         {/* Right Form Data Preview */}
-        <div className=" p-6 flex flex-col gap-6" style={{ backgroundColor: '#FFFFFF' }}>
+        <div className=" p-6 flex flex-col gap-6" style={{ backgroundColor: '#E9F5FF' }}>
           <div className="relative border rounded-2xl p-4">
             <span
               className="absolute top-0 left-0 text-xl px-6 py-4 font-semibold uppercase tracking-wide"
@@ -160,7 +160,7 @@ export default function UserPreview() {
               <div className=" flex">
               <p
                 onClick={downloadAsPDF}
-                className=" transition px-6 py-2 rounded-lg shadow-md"
+                className=" transition px-6 cursor-pointer py-2 rounded-lg shadow-md"
                 style={{ backgroundColor: '#0072FF', color: 'white' }}
               >
                 Download as PDF
@@ -186,7 +186,7 @@ export default function UserPreview() {
                     key={idx}
                     src={img}
                     alt={`Uploaded ${idx}`}
-                    className="w-full h-40 object-cover rounded-lg border"
+                    className="w-full h-40 mt-4 object-cover rounded-lg border"
                     style={{
                       transform: 'scale(0.4) rotate(130deg)',
                     }}
@@ -197,7 +197,7 @@ export default function UserPreview() {
           )}
         </div>
       </div>
-      <footer className="text-sm w-full"style={{background:"white"}}>
+      <footer className="text-sm w-full py-4"style={{background:"white"}}>
       {/* Full-width heading row */}
       <div className=" font-semibold text-left w-full"
       style={{backgroundColor:"#E9F5FF"}}>
