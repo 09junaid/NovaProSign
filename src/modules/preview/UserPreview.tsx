@@ -87,22 +87,13 @@ export default function UserPreview() {
 
             <div className="flex justify-between gap-10 mt-20">
               <div className="flex flex-col gap-2 text-sm font-semibold">
-                <h1 className="text-lg mb-2">Customer Name</h1>
-                <h1>Sign Type</h1>
-                <h1>Dimensions</h1>
-                <h1>Color</h1>
-                <h1>Finish</h1>
-                <h1>Usage</h1>
-                <h1>Illuminated</h1>
-              </div>
-              <div className="flex flex-col gap-2 text-sm font-semibold" style={{ color: '#0072FF' }}>
-                <span className="mb-2">:</span>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
+                <h1 className="text-lg mb-2">Customer Name:</h1>
+                <h1>Sign Type:</h1>
+                <h1>Dimensions:</h1>
+                <h1>Color:</h1>
+                <h1>Finish:</h1>
+                <h1>Usage:</h1>
+                <h1>Illuminated:</h1>
               </div>
               <div className="flex flex-col gap-2 text-sm" style={{ color: '#374151' }}>
                 <p className="mb-2">{formData.name}</p>
@@ -119,16 +110,10 @@ export default function UserPreview() {
 
             <div className="flex justify-between gap-10">
               <div className="flex flex-col gap-2 text-sm font-semibold">
-                <h1>Permit</h1>
-                <h1>Installation</h1>
-                <h1>UL Certificate</h1>
-                <h1>Size</h1>
-              </div>
-              <div className="flex flex-col gap-2 text-sm font-semibold" style={{ color: '#0072FF' }}>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
-                <span>:</span>
+                <h1>Permit:</h1>
+                <h1>Installation:</h1>
+                <h1>UL Certificate:</h1>
+                <h1>Size:</h1>
               </div>
               <div className="flex flex-col gap-2 text-sm" style={{ color: '#374151' }}>
                 <p>{formData.permit}</p>
